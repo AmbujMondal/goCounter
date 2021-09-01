@@ -14,7 +14,13 @@ func Test_addCounter(t *testing.T) {
 		name string
 		args args
 	}{
-		// TODO: Add test cases.
+		{
+			name: "increment",
+			args: args{
+				w: nil,
+				r: nil,
+			},
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
